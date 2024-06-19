@@ -1,0 +1,31 @@
+/* Tailwind CSS classes */
+.gallery {
+    display: flex;
+    margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .gallery__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .gallery__thumb {
+    margin: 6px;
+  }
+  
+  .gallery__selector {
+    visibility: hidden;
+  }
+  
+  .gallery__selector:checked + .gallery__img {
+    opacity: 1;
+  }
+  
+  .gallery__selector:checked ~ .gallery__thumb > img {
+    box-shadow: 0 0 0 3px #0be2f6;
+  }
+  
+  
